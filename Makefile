@@ -63,7 +63,7 @@ gen-all: generate gen-client ## Generate all code (CRDs, DeepCopy methods, and c
 
 .PHONY: generate-charts
 generate-charts: ## Generate Helm charts
-	./hack/generate-charts.sh
+	bash ./hack/generate-charts.sh
 
 .PHONY: gen-check
 gen-check: gen-all ## Check if generated code is up to date
